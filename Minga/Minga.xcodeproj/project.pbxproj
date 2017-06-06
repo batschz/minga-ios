@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		208DC3741EE6572B00DCD10B /* MeetingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DC3731EE6572B00DCD10B /* MeetingCell.swift */; };
 		366A6FBB1EE645B900A2A799 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366A6FBA1EE645B900A2A799 /* AppDelegate.swift */; };
-		366A6FBD1EE645B900A2A799 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366A6FBC1EE645B900A2A799 /* ViewController.swift */; };
+		366A6FBD1EE645B900A2A799 /* MeetingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366A6FBC1EE645B900A2A799 /* MeetingListController.swift */; };
 		366A6FC01EE645B900A2A799 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366A6FBE1EE645B900A2A799 /* Main.storyboard */; };
 		366A6FC21EE645B900A2A799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366A6FC11EE645B900A2A799 /* Assets.xcassets */; };
 		366A6FC51EE645B900A2A799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366A6FC31EE645B900A2A799 /* LaunchScreen.storyboard */; };
@@ -39,9 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		208DC3731EE6572B00DCD10B /* MeetingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingCell.swift; sourceTree = "<group>"; };
 		366A6FB71EE645B900A2A799 /* Minga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366A6FBA1EE645B900A2A799 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		366A6FBC1EE645B900A2A799 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		366A6FBC1EE645B900A2A799 /* MeetingListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingListController.swift; sourceTree = "<group>"; };
 		366A6FBF1EE645B900A2A799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		366A6FC11EE645B900A2A799 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		366A6FC41EE645B900A2A799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -112,13 +114,14 @@
 			children = (
 				366A6FE81EE645D600A2A799 /* Minga.entitlements */,
 				366A6FBA1EE645B900A2A799 /* AppDelegate.swift */,
-				366A6FBC1EE645B900A2A799 /* ViewController.swift */,
+				366A6FBC1EE645B900A2A799 /* MeetingListController.swift */,
 				366A6FBE1EE645B900A2A799 /* Main.storyboard */,
 				366A6FC11EE645B900A2A799 /* Assets.xcassets */,
 				366A6FC31EE645B900A2A799 /* LaunchScreen.storyboard */,
 				366A6FC61EE645B900A2A799 /* Info.plist */,
 				366A6FEC1EE6460B00A2A799 /* UserManager.swift */,
 				366A6FEE1EE6462200A2A799 /* MeetingManager.swift */,
+				208DC3731EE6572B00DCD10B /* MeetingCell.swift */,
 			);
 			path = Minga;
 			sourceTree = "<group>";
@@ -291,9 +294,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				366A6FED1EE6460B00A2A799 /* UserManager.swift in Sources */,
-				366A6FBD1EE645B900A2A799 /* ViewController.swift in Sources */,
+				366A6FBD1EE645B900A2A799 /* MeetingListController.swift in Sources */,
 				366A6FBB1EE645B900A2A799 /* AppDelegate.swift in Sources */,
 				366A6FEF1EE6462200A2A799 /* MeetingManager.swift in Sources */,
+				208DC3741EE6572B00DCD10B /* MeetingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,10 +462,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Minga/Minga.entitlements;
-				DEVELOPMENT_TEAM = CS6R2BY2TX;
+				DEVELOPMENT_TEAM = 8W62GL8FE7;
 				INFOPLIST_FILE = Minga/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.minga.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minga.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -473,10 +478,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Minga/Minga.entitlements;
-				DEVELOPMENT_TEAM = CS6R2BY2TX;
+				DEVELOPMENT_TEAM = 8W62GL8FE7;
 				INFOPLIST_FILE = Minga/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.minga.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minga.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -564,6 +570,7 @@
 				366A6FE11EE645BA00A2A799 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		366A6FE21EE645BA00A2A799 /* Build configuration list for PBXNativeTarget "MingaTests" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +579,7 @@
 				366A6FE41EE645BA00A2A799 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		366A6FE51EE645BA00A2A799 /* Build configuration list for PBXNativeTarget "MingaUITests" */ = {
 			isa = XCConfigurationList;
@@ -580,6 +588,7 @@
 				366A6FE71EE645BA00A2A799 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
