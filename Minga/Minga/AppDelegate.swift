@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  MingaApp
+//  Minga
 //
-//  Created by Werner Huber on 04.06.17.
+//  Created by Werner Huber on 05.06.17.
 //  Copyright © 2017 MingaApp. All rights reserved.
 //
 
@@ -16,9 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-
-        MingaManager.shared.currentUser()
-
         return true
     }
 

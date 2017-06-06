@@ -1,14 +1,14 @@
 //
-//  MingaAppUITests.swift
-//  MingaAppUITests
+//  MingaUITests.swift
+//  MingaUITests
 //
-//  Created by Werner Huber on 04.06.17.
+//  Created by Werner Huber on 05.06.17.
 //  Copyright © 2017 MingaApp. All rights reserved.
 //
 
 import XCTest
 
-class MingaAppUITests: XCTestCase {
+class MingaUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MingaApp.xcodeproj">
+      location = "self:Minga.xcodeproj">
    </FileRef>
 </Workspace>
