@@ -296,6 +296,7 @@
 				366A6FED1EE6460B00A2A799 /* UserManager.swift in Sources */,
 				366A6FBD1EE645B900A2A799 /* MeetingListController.swift in Sources */,
 				366A6FBB1EE645B900A2A799 /* AppDelegate.swift in Sources */,
+				1A1869981EE64C7700FB1E67 /* RatingControl.swift in Sources */,
 				366A6FEF1EE6462200A2A799 /* MeetingManager.swift in Sources */,
 				208DC3741EE6572B00DCD10B /* MeetingCell.swift in Sources */,
 			);
