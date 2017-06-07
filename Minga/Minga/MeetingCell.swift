@@ -10,7 +10,14 @@ import Foundation
 import UIKit
 
 class MeetingCell : UITableViewCell {
-    
+
+    @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var meetingTitleLabel: UILabel!
+    @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet var meetingOwnerLabel: UILabel!
+    @IBOutlet var reviewSumLabel: UILabel!
+
+
     override func awakeFromNib() {
         
     }

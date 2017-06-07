@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lgW-yC-qcw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lgW-yC-qcw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,14 +9,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-        </array>
-        <array key="HelveticaNeueLights.ttc">
-            <string>HelveticaNeue-Light</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="nIH-BV-0S6">
@@ -40,80 +32,95 @@
         <scene sceneID="ckR-dB-MJb">
             <objects>
                 <tableViewController id="FXL-gv-U4w" customClass="MeetingListController" customModule="Minga" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="89" sectionHeaderHeight="28" sectionFooterHeight="28" id="q8A-Rp-aUS">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="q8A-Rp-aUS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="meetingcell" rowHeight="89" id="HWP-zz-vps" customClass="MeetingCell" customModule="Minga" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="89"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="meetingcell" rowHeight="110" id="HWP-zz-vps" customClass="MeetingCell" customModule="Minga" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HWP-zz-vps" id="8z0-4S-4Zu">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="88.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="109.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sprint Review" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQL-VC-xkb">
-                                            <rect key="frame" x="8" y="8" width="218" height="26"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="251" id="Lbg-La-6KZ"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="22"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Sprint Review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQL-VC-xkb">
+                                            <rect key="frame" x="8" y="8" width="165" height="33.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datum" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okW-M0-huW">
-                                            <rect key="frame" x="234" y="15" width="100" height="19"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="100" id="zrW-YO-rGs"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Datum" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okW-M0-huW">
+                                            <rect key="frame" x="286" y="20" width="48" height="19"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="detailed description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMN-7j-bd8">
-                                            <rect key="frame" x="8" y="37" width="326" height="17"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="detailed description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMN-7j-bd8">
+                                            <rect key="frame" x="8" y="49.5" width="326" height="20.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bmL-2C-kkF">
-                                            <rect key="frame" x="8" y="58.5" width="120" height="16.5"/>
-                                            <color key="backgroundColor" red="0.93725490199999995" green="0.32156862749999998" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bmL-2C-kkF" customClass="StarRatingControl">
+                                            <rect key="frame" x="8" y="86" width="120" height="15.5"/>
+                                            <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="120" id="XpF-LT-SRI"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
+                                                    <integer key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="filledStarImage" value="star"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="emptyStarImage" value="empty_star"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                                    <integer key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(9 reviews)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIN-Y5-XAS">
-                                            <rect key="frame" x="136" y="58.5" width="66.5" height="17"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                            <rect key="frame" x="136" y="86" width="67.5" height="16"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="owner" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FO-4j-LOe">
-                                            <rect key="frame" x="295" y="58.5" width="39" height="17"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="owner" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FO-4j-LOe">
+                                            <rect key="frame" x="289" y="84.5" width="45" height="19.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="8FO-4j-LOe" firstAttribute="centerY" secondItem="dIN-Y5-XAS" secondAttribute="centerY" id="0eP-gw-190"/>
-                                        <constraint firstItem="okW-M0-huW" firstAttribute="leading" secondItem="dQL-VC-xkb" secondAttribute="trailing" constant="8" id="24r-6M-pR6"/>
                                         <constraint firstItem="dQL-VC-xkb" firstAttribute="leading" secondItem="8z0-4S-4Zu" secondAttribute="leadingMargin" id="6QR-ne-wWV"/>
                                         <constraint firstItem="dIN-Y5-XAS" firstAttribute="leading" secondItem="bmL-2C-kkF" secondAttribute="trailing" constant="8" id="CYA-iX-mfs"/>
                                         <constraint firstItem="XMN-7j-bd8" firstAttribute="leading" secondItem="dQL-VC-xkb" secondAttribute="leading" id="E5q-tE-zC2"/>
                                         <constraint firstItem="dIN-Y5-XAS" firstAttribute="centerY" secondItem="bmL-2C-kkF" secondAttribute="centerY" id="F3U-x2-jUJ"/>
+                                        <constraint firstItem="okW-M0-huW" firstAttribute="baseline" secondItem="dQL-VC-xkb" secondAttribute="baseline" id="Fz0-QJ-EoR"/>
                                         <constraint firstItem="dQL-VC-xkb" firstAttribute="top" secondItem="8z0-4S-4Zu" secondAttribute="topMargin" id="WLy-5h-nkg"/>
-                                        <constraint firstItem="bmL-2C-kkF" firstAttribute="top" secondItem="XMN-7j-bd8" secondAttribute="bottom" constant="5" id="XKu-Bc-q3b"/>
+                                        <constraint firstItem="bmL-2C-kkF" firstAttribute="top" secondItem="XMN-7j-bd8" secondAttribute="bottom" constant="16" id="XKu-Bc-q3b"/>
                                         <constraint firstItem="bmL-2C-kkF" firstAttribute="leading" secondItem="XMN-7j-bd8" secondAttribute="leading" id="bvY-Ub-NhK"/>
                                         <constraint firstItem="8FO-4j-LOe" firstAttribute="trailing" secondItem="XMN-7j-bd8" secondAttribute="trailing" id="czZ-Od-nvU"/>
                                         <constraint firstItem="XMN-7j-bd8" firstAttribute="trailing" secondItem="okW-M0-huW" secondAttribute="trailing" id="eV3-QJ-c3k"/>
                                         <constraint firstItem="dIN-Y5-XAS" firstAttribute="top" secondItem="bmL-2C-kkF" secondAttribute="top" id="gMw-0R-dOJ"/>
-                                        <constraint firstItem="okW-M0-huW" firstAttribute="bottom" secondItem="dQL-VC-xkb" secondAttribute="bottom" id="rjv-ME-swP"/>
-                                        <constraint firstItem="XMN-7j-bd8" firstAttribute="top" secondItem="dQL-VC-xkb" secondAttribute="bottom" constant="3" id="seT-r9-zkb"/>
+                                        <constraint firstItem="8FO-4j-LOe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dIN-Y5-XAS" secondAttribute="trailing" constant="8" id="i86-wa-tZb"/>
+                                        <constraint firstItem="XMN-7j-bd8" firstAttribute="top" secondItem="dQL-VC-xkb" secondAttribute="bottom" constant="8" id="seT-r9-zkb"/>
                                         <constraint firstItem="okW-M0-huW" firstAttribute="trailing" secondItem="8z0-4S-4Zu" secondAttribute="trailingMargin" id="ta1-8p-DOu"/>
+                                        <constraint firstItem="okW-M0-huW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dQL-VC-xkb" secondAttribute="trailing" constant="8" id="xNF-uP-xee"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateLabel" destination="okW-M0-huW" id="Mc3-Mj-jST"/>
+                                    <outlet property="descriptionLabel" destination="XMN-7j-bd8" id="Flt-HV-yRS"/>
+                                    <outlet property="meetingOwner" destination="8FO-4j-LOe" id="Tsi-aK-qQv"/>
+                                    <outlet property="meetingTitle" destination="dQL-VC-xkb" id="3Oi-XB-GDx"/>
+                                    <outlet property="reviewSumLabel" destination="dIN-Y5-XAS" id="NmE-A4-4iI"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -125,7 +132,11 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MrD-O9-YXx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="637.60000000000002" y="191.1544227886057"/>
+            <point key="canvasLocation" x="602" y="190"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="empty_star" width="2000" height="1918"/>
+        <image name="star" width="2000" height="2000"/>
+    </resources>
 </document>

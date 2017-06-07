@@ -41,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		208DC3731EE6572B00DCD10B /* MeetingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingCell.swift; sourceTree = "<group>"; };
-		208DC3751EE65CE500DCD10B /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		208DC3751EE65CE500DCD10B /* StarRatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingControl.swift; sourceTree = "<group>"; };
 		366A6FB71EE645B900A2A799 /* Minga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366A6FBA1EE645B900A2A799 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		366A6FBC1EE645B900A2A799 /* MeetingListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingListController.swift; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 				366A6FC61EE645B900A2A799 /* Info.plist */,
 				366A6FEC1EE6460B00A2A799 /* UserManager.swift */,
 				366A6FEE1EE6462200A2A799 /* MeetingManager.swift */,
-				208DC3751EE65CE500DCD10B /* RatingControl.swift */,
+				208DC3751EE65CE500DCD10B /* StarRatingControl.swift */,
 				208DC3731EE6572B00DCD10B /* MeetingCell.swift */,
 			);
 			path = Minga;

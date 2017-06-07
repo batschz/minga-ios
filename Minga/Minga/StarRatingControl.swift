@@ -71,7 +71,7 @@ class StarRatingControl: UIView {
     func initRate() {
         if ratingButtons.count == 0 {
 
-            for _ in 0..<maxRating {
+            for _ in 0 ..< maxRating {
                 let button = UIButton()
 
                 button.setImage(emptyStarImage, for: UIControlState())
@@ -86,7 +86,7 @@ class StarRatingControl: UIView {
         }
     }
 
-    override open func layoutSubviews() {
+    override func layoutSubviews() {
         super.layoutSubviews()
 
         self.initRate()
@@ -99,7 +99,7 @@ class StarRatingControl: UIView {
         updateButtonSelectionStates()
     }
 
-    override open var intrinsicContentSize : CGSize {
+    override var intrinsicContentSize : CGSize {
         return CGSize(width: width, height: buttonSize)
     }
 
@@ -109,15 +109,15 @@ class StarRatingControl: UIView {
         }
     }
 
-    override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         handleStarTouches(touches, withEvent: event)
     }
 
-    override open func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         handleStarTouches(touches, withEvent: event)
     }
 
-    override open func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         delegate?.didSelectRating(self, rating: self.rating)
     }
 
