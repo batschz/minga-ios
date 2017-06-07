@@ -28,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="-52" y="191"/>
         </scene>
-        <!--Meeting List Controller-->
+        <!--Minga-->
         <scene sceneID="ckR-dB-MJb">
             <objects>
                 <tableViewController id="FXL-gv-U4w" customClass="MeetingListController" customModule="Minga" customModuleProvider="target" sceneMemberID="viewController">
@@ -117,8 +117,8 @@
                                 <connections>
                                     <outlet property="dateLabel" destination="okW-M0-huW" id="Mc3-Mj-jST"/>
                                     <outlet property="descriptionLabel" destination="XMN-7j-bd8" id="Flt-HV-yRS"/>
-                                    <outlet property="meetingOwner" destination="8FO-4j-LOe" id="Tsi-aK-qQv"/>
-                                    <outlet property="meetingTitle" destination="dQL-VC-xkb" id="3Oi-XB-GDx"/>
+                                    <outlet property="meetingOwnerLabel" destination="8FO-4j-LOe" id="AfU-5i-E5c"/>
+                                    <outlet property="meetingTitleLabel" destination="dQL-VC-xkb" id="A9q-g1-10K"/>
                                     <outlet property="reviewSumLabel" destination="dIN-Y5-XAS" id="NmE-A4-4iI"/>
                                 </connections>
                             </tableViewCell>
@@ -128,11 +128,11 @@
                             <outlet property="delegate" destination="FXL-gv-U4w" id="hk8-SV-cL5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="679-G9-qA7"/>
+                    <navigationItem key="navigationItem" title="Minga" id="679-G9-qA7"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MrD-O9-YXx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="602" y="190"/>
+            <point key="canvasLocation" x="710" y="190"/>
         </scene>
     </scenes>
     <resources>
