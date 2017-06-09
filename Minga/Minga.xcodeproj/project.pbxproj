@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A4A95981EEA15C500C254B5 /* CreateMeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4A95971EEA15C500C254B5 /* CreateMeetingViewController.swift */; };
 		208DC3741EE6572B00DCD10B /* MeetingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DC3731EE6572B00DCD10B /* MeetingCell.swift */; };
 		366A6FBB1EE645B900A2A799 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366A6FBA1EE645B900A2A799 /* AppDelegate.swift */; };
 		366A6FBD1EE645B900A2A799 /* MeetingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366A6FBC1EE645B900A2A799 /* MeetingListController.swift */; };
 		366A6FC01EE645B900A2A799 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366A6FBE1EE645B900A2A799 /* Main.storyboard */; };
 		366A6FC21EE645B900A2A799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366A6FC11EE645B900A2A799 /* Assets.xcassets */; };
-		366A6FC51EE645B900A2A799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366A6FC31EE645B900A2A799 /* LaunchScreen.storyboard */; };
 		366A6FD01EE645B900A2A799 /* MingaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366A6FCF1EE645B900A2A799 /* MingaTests.swift */; };
 		366A6FDB1EE645BA00A2A799 /* MingaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366A6FDA1EE645BA00A2A799 /* MingaUITests.swift */; };
 		366A6FEB1EE645D900A2A799 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366A6FEA1EE645D900A2A799 /* CloudKit.framework */; };
@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A4A95971EEA15C500C254B5 /* CreateMeetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMeetingViewController.swift; sourceTree = "<group>"; };
 		208DC3731EE6572B00DCD10B /* MeetingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingCell.swift; sourceTree = "<group>"; };
 		208DC3751EE65CE500DCD10B /* StarRatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingControl.swift; sourceTree = "<group>"; };
 		366A6FB71EE645B900A2A799 /* Minga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minga.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,7 +48,6 @@
 		366A6FBC1EE645B900A2A799 /* MeetingListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingListController.swift; sourceTree = "<group>"; };
 		366A6FBF1EE645B900A2A799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		366A6FC11EE645B900A2A799 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		366A6FC41EE645B900A2A799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		366A6FC61EE645B900A2A799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		366A6FCB1EE645B900A2A799 /* MingaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MingaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		366A6FCF1EE645B900A2A799 /* MingaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MingaTests.swift; sourceTree = "<group>"; };
@@ -116,9 +116,9 @@
 				366A6FE81EE645D600A2A799 /* Minga.entitlements */,
 				366A6FBA1EE645B900A2A799 /* AppDelegate.swift */,
 				366A6FBC1EE645B900A2A799 /* MeetingListController.swift */,
+				1A4A95971EEA15C500C254B5 /* CreateMeetingViewController.swift */,
 				366A6FBE1EE645B900A2A799 /* Main.storyboard */,
 				366A6FC11EE645B900A2A799 /* Assets.xcassets */,
-				366A6FC31EE645B900A2A799 /* LaunchScreen.storyboard */,
 				366A6FC61EE645B900A2A799 /* Info.plist */,
 				366A6FEC1EE6460B00A2A799 /* UserManager.swift */,
 				366A6FEE1EE6462200A2A799 /* MeetingManager.swift */,
@@ -268,7 +268,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				366A6FC51EE645B900A2A799 /* LaunchScreen.storyboard in Resources */,
 				366A6FC21EE645B900A2A799 /* Assets.xcassets in Resources */,
 				366A6FC01EE645B900A2A799 /* Main.storyboard in Resources */,
 			);
@@ -297,6 +296,7 @@
 			files = (
 				366A6FED1EE6460B00A2A799 /* UserManager.swift in Sources */,
 				366A6FBD1EE645B900A2A799 /* MeetingListController.swift in Sources */,
+				1A4A95981EEA15C500C254B5 /* CreateMeetingViewController.swift in Sources */,
 				366A6FBB1EE645B900A2A799 /* AppDelegate.swift in Sources */,
 				366A6FEF1EE6462200A2A799 /* MeetingManager.swift in Sources */,
 				208DC3741EE6572B00DCD10B /* MeetingCell.swift in Sources */,
@@ -343,14 +343,6 @@
 				366A6FBF1EE645B900A2A799 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		366A6FC31EE645B900A2A799 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				366A6FC41EE645B900A2A799 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -466,7 +458,7 @@
 				CODE_SIGN_ENTITLEMENTS = Minga/Minga.entitlements;
 				DEVELOPMENT_TEAM = 8W62GL8FE7;
 				INFOPLIST_FILE = Minga/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.minga.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,7 +474,7 @@
 				CODE_SIGN_ENTITLEMENTS = Minga/Minga.entitlements;
 				DEVELOPMENT_TEAM = 8W62GL8FE7;
 				INFOPLIST_FILE = Minga/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.minga.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";

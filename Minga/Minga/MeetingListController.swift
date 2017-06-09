@@ -8,32 +8,37 @@
 
 import UIKit
 
-class MeetingListController : UITableViewController {
+class MeetingListController : UITableViewController, UISearchResultsUpdating {
+
+    let searchController = UISearchController(searchResultsController: nil)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         customizeBarButtonItems()
+        setupSearchController()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func setupSearchController() {
+        searchController.searchResultsUpdater = self
+    }
+
+    func updateSearchResults(for searchController: UISearchController) {
+        // update
     }
     
     func customizeBarButtonItems () {
-        //var createMeeting = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: <#T##Selector?#>)
+        navigationItem.searchController = searchController
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 15
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "meetingcell")
         return cell!
     }
-
 
 }
 
